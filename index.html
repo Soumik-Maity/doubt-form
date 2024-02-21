@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalvium Student Details</title>
+  </head>
+  <body>
+    <h1>Doubt Solving Form</h1>
+
+    <form
+      action="mailto:soumikmaity007@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="gfg">GFG Score:</label>
+      <input type="number" id="gfg" name="gfg_score" required /><br /><br />
+
+      <label for="coding_language">Primary Coding Language:</label>
+      <select id="coding_language" name="coding_language" required>
+        <option value="">Select</option>
+        <option value="Java">Java</option>
+        <option value="C++">C++</option>
+        <option value="Python">Python</option>
+        <option value="other">Other</option></select
+      ><br /><br />
+
+      <label for="last_login"
+        >When did you last login into your LeetCode account?</label
+      >
+      <input type="date" name="last_login" id="last_login" required />
+      <br /><br />
+
+      <label for="level">Rate yourself in DSA</label>
+
+      <input type="radio" name="level" id="basic" value="Basic" checked l />
+      Basic
+      <input type="radio" name="level" id="intermediate" value="Intermediate" />
+      Intermediate
+      <input type="radio" name="level" id="advanced" value="Advanced" />
+      Advanced <br /><br />
+
+      <label for="image">Upload Problem image(if any):</label>
+      <input type="file" id="image" name="Doubt" />
+      <br /><br />
+
+      <label for="message">Ask Doubt:</label><br />
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <button type="reset">Reset</button>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
